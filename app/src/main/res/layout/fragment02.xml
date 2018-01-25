@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="#dadada"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_margin="20dp"
+        android:background="@drawable/round_layout_background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <EditText
+            android:id="@+id/editText4"
+            android:padding="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="22dp"
+            android:layout_marginTop="32dp"
+            android:background="@drawable/back"
+            android:ems="9"
+            android:textSize="20dp"
+            android:hint="아이디를 입력해주세요."
+            android:inputType="textPersonName" />
+
+        <Button
+            android:id="@+id/button15"
+            android:layout_margin="1dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/editText4"
+            android:layout_marginStart="12dp"
+            android:layout_toEndOf="@+id/editText4"
+            android:background="@drawable/btnstyle_black"
+            android:text="확인"
+            android:textSize="10dp" />
+    </RelativeLayout>
+</RelativeLayout>

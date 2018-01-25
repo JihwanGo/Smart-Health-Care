@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:gravity="center_vertical"
+    android:background="#54d7cc"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:text="S.L.P 지킴이"
+        android:id="@+id/custom_title_textview"
+        android:textSize="30dp"
+        android:textColor="#fff"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginLeft="17dp"
+        android:layout_width="match_parent"
+        android:layout_height="56dp" />
+
+</RelativeLayout>

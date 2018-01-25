@@ -1,0 +1,135 @@
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.safetylifeproperty.slpro.slp.PatientMapsActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:background="#c7e2f6"
+        android:id="@+id/relativeLayout5">
+
+        <RelativeLayout
+            android:layout_margin="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#ffffff">
+
+
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="40dp"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:text="위도" />
+
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView4"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="40dp"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:text="경도" />
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:background="#c7e2f6"
+                android:layout_marginLeft="120dp"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:layout_alignBaseline="@+id/textView4"
+                android:layout_alignBottom="@+id/textView4"
+                android:layout_toEndOf="@+id/textView4"
+                android:layout_marginStart="27dp" />
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:background="#c7e2f6"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:layout_alignBottom="@+id/textView5"
+                android:layout_alignStart="@+id/textView6"
+                android:layout_alignTop="@+id/textView5" />
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:background="#c7e2f6"
+                android:textSize="15dp"
+                android:layout_marginTop="10dp"
+                android:textStyle="bold"
+                android:layout_below="@+id/textView7"
+                android:layout_alignStart="@+id/textView7" />
+
+
+            <Button
+                android:id="@+id/Details_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:layout_marginStart="28dp"
+                android:layout_marginTop="5dp"
+                android:textStyle="bold"
+                android:textSize="15dp"
+                android:text="자세히"
+                android:background="#c7e2f6"
+                android:layout_below="@+id/textView8"
+                android:layout_alignStart="@+id/textView5" />
+
+            <Button
+                android:id="@+id/button12"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:background="#c7e2f6"
+                android:textStyle="bold"
+                android:textSize="15dp"
+                android:text="검색"
+                android:layout_marginEnd="46dp"
+                android:layout_alignBottom="@+id/Details_btn"
+                android:layout_alignParentEnd="true"
+                android:layout_alignTop="@+id/Details_btn" />
+
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="주소"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:layout_below="@+id/textView5"
+                android:layout_alignStart="@+id/textView5" />
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+    <fragment android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/relativeLayout5" />
+
+
+
+
+</RelativeLayout>
+
+
